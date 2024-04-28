@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Management</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Recipe Details Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="recipeName">Recipe Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipeName"
+                  name="recipeName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ingredients">Ingredients</label>
+                <textarea
+                  class="form-control"
+                  id="ingredients"
+                  name="ingredients"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="instructions">Instructions</label>
+                <textarea
+                  class="form-control"
+                  id="instructions"
+                  name="instructions"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="imageUrl">Image URL</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="imageUrl"
+                  name="imageUrl"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+            <button onclick="window.location.href = 'get_info.php';" class="btn btn-primary">View Recipes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  
+</div>
+  </body>
+</html>
